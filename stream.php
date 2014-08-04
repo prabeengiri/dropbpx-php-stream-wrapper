@@ -11,9 +11,9 @@ class Stream {
     $data = parse_url($path);
     $this->wrapper = $data['scheme'];
     $this->uri = $data['host'];
+    return true;
   }
-
-  //private function oo
+   //private function oo
 }
 
 
@@ -22,5 +22,4 @@ function _debug($array, $die = true){
   print_r($array);
   echo "</pre>";
   if ($die) die;
-
 }
